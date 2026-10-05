@@ -1,0 +1,16 @@
+.contact { padding: 110px 0 25px; background: var(--yellow); color: var(--black); }
+.contact .section-kicker { color: var(--black); }.contact .section-kicker::before { background: var(--black); }
+.contact h2 { margin: 100px 0 45px; font-size: clamp(3rem, 9vw, 9rem); letter-spacing: -.09em; line-height: .83; }
+.contact h2 em { color: transparent; -webkit-text-stroke: 1px var(--black); font-style: normal; }
+.contact-tagline { max-width: 450px; margin: 0 0 30px; color: rgba(9, 9, 9, 0.68); line-height: 1.6; }
+.contact-email { display: inline-flex; align-items: center; gap: 25px; padding-bottom: 12px; border-bottom: 1px solid var(--black); color: var(--black); font: 700 clamp(1rem, 2vw, 1.35rem) "Space Mono", monospace; }
+.contact-email span { font-size: 1.5rem; }
+.contact-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 110px; padding-top: 22px; border-top: 1px solid rgba(9,9,9,.3); font: .62rem "Space Mono", monospace; text-transform: uppercase; }
+.contact-brand, .contact-socials { display: flex; flex-direction: column; gap: 8px; }
+.contact-brand strong { color: var(--black); font: 700 1.2rem "DM Sans", sans-serif; letter-spacing: -.08em; }
+.contact-brand strong span { color: var(--black); }.contact-brand small { color: rgba(9,9,9,.62); font: .6rem "Space Mono", monospace; }
+.contact-nav, .contact-socials { display: flex; flex-wrap: wrap; gap: 10px 20px; align-content: start; }
+.contact-nav a, .contact-socials a { color: rgba(9,9,9,.68); transition: color 200ms, transform 200ms; }
+.contact-nav a:hover, .contact-socials a:hover { color: var(--black); transform: translateY(-2px); }
+.contact-endline { display: flex; justify-content: space-between; margin-top: 55px; padding-top: 15px; border-top: 1px solid rgba(9,9,9,.25); color: rgba(9,9,9,.58); font: .58rem "Space Mono", monospace; text-transform: uppercase; }
+@media (max-width: 700px) { .contact { padding-top: 90px; } .contact h2 { margin-top: 75px; } .contact-bottom { grid-template-columns: 1fr 1fr; margin-top: 85px; } .contact-socials { grid-column: 1 / -1; flex-direction: row; } .contact-endline { flex-wrap: wrap; gap: 10px; } }

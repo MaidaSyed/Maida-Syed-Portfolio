@@ -1,0 +1,16 @@
+.experience { padding-bottom: 180px; }
+.experience-heading { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 70px; }
+.experience-heading .section-title { margin: 20px 0 0; }
+.experience-list { display: grid; gap: 14px; }
+.experience-list::before { position: absolute; left: 18px; height: calc(100% - 40px); border-left: 1px solid rgba(244,211,94,.45); content: ""; }
+.experience { position: relative; }
+.experience-card { position: sticky; top: 90px; display: grid; grid-template-columns: 60px 190px 1fr 40px; gap: 20px; align-items: start; min-height: 220px; padding: 32px; border: 1px solid var(--line); border-radius: 3px; background: var(--panel); box-shadow: 0 18px 45px rgba(0,0,0,.16); }
+.experience-card:nth-child(2) { background: #1b1b19; }
+.experience-card:nth-child(3) { background: #201f1a; }
+.experience-card:nth-child(4) { background: #252218; }
+.experience-index, .experience-year { color: var(--yellow); font: .68rem "Space Mono", monospace; }
+.experience-card h3 { margin: 0; color: var(--paper); font-size: clamp(1.4rem, 3vw, 2.6rem); letter-spacing: -.05em; }
+.experience-company { margin: 8px 0 28px; color: var(--yellow); font: .7rem "Space Mono", monospace; text-transform: uppercase; }
+.experience-text { max-width: 440px; margin: 0; color: var(--muted); line-height: 1.6; }
+.experience-arrow { color: var(--yellow); font-size: 1.5rem; }
+@media (max-width: 700px) { .experience { padding-bottom: 120px; } .experience-heading { display: block; margin-bottom: 45px; } .experience-card { grid-template-columns: 35px 1fr 25px; min-height: 250px; padding: 24px 18px; } .experience-year { grid-column: 2; grid-row: 1; } .experience-card > div:last-of-type { grid-column: 2; } .experience-arrow { grid-column: 3; grid-row: 1; } .experience-index { grid-row: 1 / span 2; } }

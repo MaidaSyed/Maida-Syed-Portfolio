@@ -1,0 +1,17 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+}
+
+.intro h1 {
+  margin: 0;
+  color: var(--black);
+  font-size: clamp(3rem, 10vw, 10rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}

@@ -1,0 +1,21 @@
+.skills { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(45px, 9vw, 130px); padding-bottom: 180px; }
+.skills-intro { position: sticky; top: 110px; align-self: start; }
+.skill-groups { border-top: 1px solid var(--line); }
+.skill-group { padding: 24px 0 28px; border-bottom: 1px solid var(--line); }
+.skill-title { display: flex; gap: 16px; align-items: center; margin-bottom: 17px; }
+.skill-title span { color: var(--yellow); font: .65rem "Space Mono", monospace; }
+.skill-title h3 { flex: 1; margin: 0; font-size: 1.05rem; }
+.skill-title i { color: var(--yellow); font: normal .7rem "Space Mono", monospace; opacity: 0; transform: scale(.5); transition: opacity .4s .5s, transform .4s .5s; }
+.skills-loaded .skill-title i { opacity: 1; transform: scale(1); }
+.skill-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+.skill-pill { display: inline-flex; gap: 16px; align-items: center; padding: 9px 11px; border: 1px solid var(--line); border-radius: 30px; color: var(--muted); font-size: .76rem; transition: border-color 200ms, color 200ms, background 200ms, transform 200ms; }
+.skill-pill b { color: var(--yellow); font-weight: 400; }
+.skill-pill:hover { border-color: var(--yellow); background: rgba(244,211,94,.06); color: var(--paper); transform: translateY(-3px); }
+.stack-status { max-width: 340px; margin-top: 60px; padding: 19px; border: 1px solid var(--line); background: rgba(255,255,255,.02); font-family: "Space Mono", monospace; }
+.stack-status-top { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .65rem; text-transform: uppercase; }
+.stack-status-top strong { color: var(--yellow); font-weight: 400; }
+.stack-progress { height: 4px; margin: 15px 0 13px; overflow: hidden; background: rgba(255,255,255,.1); }
+.stack-progress span { display: block; width: 0; height: 100%; background: var(--yellow); transition: width 1.1s cubic-bezier(.22,1,.36,1); }
+.skills-loaded .stack-progress span { width: 100%; }
+.stack-status p { margin: 0; color: #777; font-size: .6rem; }
+@media (max-width: 760px) { .skills { display: block; padding-bottom: 120px; } .skills-intro { position: static; } .skill-groups { margin-top: 65px; } .stack-status { margin-top: 42px; } }

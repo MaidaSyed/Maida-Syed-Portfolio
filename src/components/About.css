@@ -1,0 +1,14 @@
+.about { display: grid; grid-template-columns: .85fr 1fr; gap: clamp(40px, 9vw, 150px); align-items: end; padding-top: 160px; padding-bottom: 180px; }
+.about-copy .section-title { margin-bottom: 0; }
+.about-card { position: relative; padding: 34px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); }
+.about-card p { max-width: 450px; margin: 0 0 20px; color: var(--paper); font-size: clamp(1.15rem, 2vw, 1.6rem); line-height: 1.35; }
+.about-card .about-muted { color: var(--muted); font-size: .92rem; line-height: 1.7; }
+.about-orbit { position: absolute; top: -45px; right: 28px; display: grid; place-items: center; width: 88px; height: 88px; border: 1px solid var(--yellow); border-radius: 50%; color: var(--yellow); font: 700 1rem "Space Mono", monospace; animation: float 5s ease-in-out infinite; }
+.about-orbit::before { position: absolute; inset: 9px; border: 1px dashed rgba(244,211,94,.5); border-radius: 50%; content: ""; }
+.about-highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin-top: 38px; padding-top: 17px; border-top: 1px solid var(--line); }
+.about-highlights span { display: grid; gap: 6px; }
+.about-highlights strong { color: var(--yellow); font: 700 .9rem "Space Mono", monospace; }
+.about-highlights small { color: var(--muted); font: .58rem/1.4 "Space Mono", monospace; text-transform: uppercase; }
+@keyframes float { 50% { transform: translateY(-8px) rotate(8deg); } }
+@media (max-width: 760px) { .about { display: block; padding-top: 100px; padding-bottom: 120px; } .about-card { margin-top: 70px; } }
+@media (max-width: 440px) { .about-highlights { grid-template-columns: 1fr; } }

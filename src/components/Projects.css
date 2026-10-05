@@ -1,0 +1,19 @@
+.projects { padding: 130px 0 190px; background: #0d0d0d; }
+.project-stack { display: grid; gap: 18px; margin-top: 75px; }
+.project-card { position: sticky; top: 90px; min-height: 430px; overflow: hidden; padding: 28px 34px 34px; border: 1px solid transparent; border-radius: 4px; color: var(--black); transition: border-color 300ms, transform 300ms, box-shadow 300ms; }
+.project-card:hover { border-color: var(--black); transform: scale(1.012); box-shadow: 0 20px 50px rgba(0,0,0,.2); }
+.project-gold { background: var(--yellow); }.project-olive { background: #bcc476; }.project-cream { background: #e8e1d1; }
+.project-top, .project-tags { display: flex; justify-content: space-between; font: .68rem "Space Mono", monospace; text-transform: uppercase; }
+.project-body { position: absolute; right: 34px; bottom: 34px; left: 34px; display: flex; justify-content: space-between; align-items: flex-end; gap: 25px; }
+.project-card h3 { margin: 0; font-size: clamp(2.6rem, 8vw, 7rem); letter-spacing: -.09em; line-height: .8; overflow-wrap: anywhere; }
+.project-card p { max-width: 360px; margin: 28px 0 20px; font-size: 1rem; line-height: 1.45; }
+.project-tags { justify-content: flex-start; gap: 8px; }
+.project-tags span { padding: 7px 10px; border: 1px solid rgba(9,9,9,.3); border-radius: 20px; }
+.project-links { display: flex; flex: 0 0 auto; gap: 8px; }
+.project-links a { padding: 13px 15px; border: 1px solid rgba(9,9,9,.5); border-radius: 30px; font-size: .75rem; font-weight: 700; transition: background 200ms, color 200ms, transform 200ms; }
+.project-links a span { margin-left: 8px; }
+.project-links a:hover { background: var(--black); color: var(--yellow); transform: translateY(-3px); }
+.project-shape { position: absolute; top: 28%; right: 8%; width: 170px; height: 170px; border: 1px solid rgba(9,9,9,.35); border-radius: 50%; transform: rotate(25deg); opacity: .7; }
+.project-shape::after { position: absolute; inset: 20px; border: 1px solid rgba(9,9,9,.35); border-radius: 50%; content: ""; }
+@media (max-width: 700px) { .projects { padding: 100px 0 120px; } .project-card { min-height: 470px; padding: 22px; } .project-body { right: 22px; bottom: 22px; left: 22px; display: block; } .project-card h3 { font-size: 4rem; } .project-links { margin-top: 25px; } .project-shape { top: 22%; right: 5%; width: 120px; height: 120px; } }
+@media (prefers-reduced-motion: reduce) { .project-card:hover { transform: none; } }
